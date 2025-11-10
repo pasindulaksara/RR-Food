@@ -160,10 +160,10 @@ export default function ProductDetail({ product }: ProductDetailProps) {
             </span>
             {productOldPrice && (
               <>
-                <span className="text-lg line-through text-white dark:text-gray-500">
+                <span className="text-lg line-through text-white dark:text-gray-500 hidden">
                   Rs.{productOldPrice.toFixed(2)}
                 </span>
-                <span className="text-xs font-semibold uppercase bg-red-500 text-white px-2 py-1 rounded-full animate-pulse">
+                <span className="text-xs font-semibold uppercase bg-red-500 text-white px-2 py-1 rounded-full animate-pulse hidden">
                   Sale
                 </span>
               </>
@@ -211,7 +211,7 @@ export default function ProductDetail({ product }: ProductDetailProps) {
             </div>
             <button
               onClick={handleAddToCart}
-              className="bg-[#c9a566] text-white px-8 py-3 rounded-lg shadow-lg hover:shadow-xl transition transform hover:scale-105"
+              className="bg-[#c9a566] text-white px-8 py-3 rounded-lg shadow-lg hover:shadow-xl transition transform hover:scale-105 hidden"
             >
               ADD TO CART
             </button>
