@@ -16,16 +16,14 @@ export default function LoginPage() {
   const [password, setPassword] = useState('');
 
   // Form submission handler
-  const handleLogin = (e) => {
+  const handleLogin = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Your API call to the Laravel backend for login goes here
-    console.log('Logging in with:', { email });
+    console.log('Logging in with:', { email, password });
   };
 
-  const handleSocialLogin = (provider) => {
-    // Your social login logic would go here
+  const handleSocialLogin = (provider: string) => {
     console.log(`Attempting to login with ${provider}`);
-  }
+  };
 
   return (
     <div
