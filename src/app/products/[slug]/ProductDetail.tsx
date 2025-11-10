@@ -155,7 +155,7 @@ export default function ProductDetail({ product }: ProductDetailProps) {
         <div className="space-y-6 px-4">
           <h1 className="text-4xl font-extrabold">{productName}</h1>
           <div className="flex items-baseline gap-4">
-            <span className="text-3xl font-bold text-[#c9a566]">
+            <span className="text-3xl font-bold text-[#c9a566] hidden">
               Rs.{productPrice.toFixed(2)}
             </span>
             {productOldPrice && (
@@ -310,7 +310,7 @@ export default function ProductDetail({ product }: ProductDetailProps) {
                   <h4 className="font-semibold text-sm text-black dark:text-white">
                     {item.name}
                   </h4>
-                  <p className="text-xs text-gray-500 dark:text-gray-300">
+                  <p className="text-xs text-gray-500 dark:text-gray-300 hidden">
                     Rs. {parseFloat(item.price).toFixed(2)}
                   </p>
                 </div>

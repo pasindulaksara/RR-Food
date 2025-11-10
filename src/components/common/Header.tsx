@@ -141,8 +141,8 @@ const Header = () => {
           </nav>
 
           <div className={`hidden lg:flex gap-6 items-center text-base pt-2 ${textColor}`}>
-            <Link href="/login">LOGIN</Link>
-            <Link href="/cart" className="relative">
+            <Link href="/login" className="hidden">LOGIN</Link>
+            <Link href="/cart" className="relative hidden">
               <FiShoppingCart className="text-lg" />
               {cartCount > 0 && (
                 <span className="absolute -top-2 -right-2 bg-red-500 text-white rounded-full w-5 h-5 text-xs flex items-center justify-center">

@@ -38,7 +38,7 @@ export default function CartPage() {
                 <div className="flex-1">
                   <h2 className="font-semibold">{item.name}</h2>
                   <p className="text-gray-500 dark:text-gray-300">
-                    ${item.price.toFixed(2)}
+                    Rs.{item.price.toFixed(2)}
                   </p>
                 </div>
                 <div className="flex items-center gap-2">
@@ -67,19 +67,19 @@ export default function CartPage() {
 
           <div className="flex justify-between mb-2">
             <span>Subtotal</span>
-            <span>${subtotal.toFixed(2)}</span>
+            <span>Rs.{subtotal.toFixed(2)}</span>
           </div>
 
           <div className="flex justify-between mb-2">
             <span>Discount</span>
-            <span>-${discount.toFixed(2)}</span>
+            <span>-Rs.{discount.toFixed(2)}</span>
           </div>
 
           <div className="border-t border-gray-300 dark:border-gray-700 my-4" />
 
           <div className="flex justify-between font-bold text-lg mb-4">
             <span>Total</span>
-            <span>${total.toFixed(2)}</span>
+            <span>Rs.{total.toFixed(2)}</span>
           </div>
 
           <input
