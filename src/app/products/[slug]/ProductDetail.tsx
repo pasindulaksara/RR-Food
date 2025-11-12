@@ -79,7 +79,7 @@ export default function ProductDetail({ product }: ProductDetailProps) {
 
   const handleBuyNow = () => {
     const message = `Hi, I'm interested in buying ${quantity} of "${productName}".`;
-    const whatsappURL = `https://wa.me/+94770562303?text=${encodeURIComponent(
+    const whatsappURL = `https://wa.me/+94706706101?text=${encodeURIComponent(
       message
     )}`;
     window.open(whatsappURL, "_blank");
